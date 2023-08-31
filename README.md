@@ -36,6 +36,7 @@ This is written from the perspective of a Windows 11 Pro machine (Lenovo P14s). 
   * SSH in using ```ssh -i ot2_ssh_key root@ROBOT_IP```. You should see the OT2 logo in as ASCII art, and a # prompt. [Opentrons' advice on SSHing in](https://support.opentrons.com/s/article/Connecting-to-your-OT-2-with-SSH)
   * If you type in ```whoami``` you should see the ouput ```root```. If you type in ```touch myfile.txt``` and then ``ls``, you should see that the file has been created.
   * Upload your recipe file (```opentronsdemo.py``` in our case) to the robot using ```scp``` in PowerShell: ``` scp -i ot2_ssh_key "C:\Users\jaehs\Documents\Code\Opentrons Jehad\opentronsdemo.py" root@ROBOT_IP:/data```. Don't forget to replace ROBOT_IP with the robot's IP.
+      * Your key must be in the current directory. 
       *  The root in OT2 appears to be read-only; ```scp``` doesn't work. Copy to /data instead. [Opentrons' Instructions] (https://support.opentrons.com/s/article/Copying-files-to-and-from-your-OT-2-with-SCP)
    *  Navigate to data: ``` cd /data```. Make sure your file's there: ```ls```
    *  Run the recipe: ```opentrons_execute opentronsdemo.py```
