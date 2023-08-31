@@ -3,7 +3,7 @@ Scripts for a self-driving lab for corrosion measurements
 
 ## Setting up an Opentrons OT2
 
-This is written from the perspective of a Windows 11 Pro machine (Lenovo P14s). Should be similar for mac and linux, except for [minor variation in SSH procedure.](https://support.opentrons.com/s/article/Setting-up-SSH-access-to-your-OT-2)
+This is written from the perspective of a Windows 11 Pro machine (Lenovo P14s). Procedure is similar for mac and linux, except for [minor variation in SSH procedure.](https://support.opentrons.com/s/article/Setting-up-SSH-access-to-your-OT-2)
 
 ### Basic setup
 
